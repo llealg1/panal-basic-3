@@ -28,7 +28,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <!-- Styles Dev -->
+  <link href="assets/css/styles.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: UpConstruction - v1.2.1
   * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
@@ -40,42 +41,23 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
+  <header id="header" class="header d-flex align-items-center p-3 headerNav mt-md-4 mt-sm-0">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>UpConstruction<span>.</span></h1>
+        <h1 class="h1">LOGO</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="active">¿Quiénes somos?</a></li>
+          <li><a href="about.html">Propiedades</a></li>
+          <li><a href="services.html">Contáctanos</a></li>
+          <li><a href="projects.html">Intranet</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -84,39 +66,107 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
+    <div id="hero-carousel">
+      <div class="carousel-item active" style="background-image: url(assets/img/breadcrumbs-bg.jpg)"></div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
 
-    <div class="info d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Welcome to <span>UpConstruction</span></h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+  <!-- ======= Filter Properties Section ======= -->
+  <section>
+    <form>
+      <div class="container-fluid container-xl filterProperties" style="background-color: gray; position: relative;margin-top: 50vh;" >
+        <div class="row containerFilter">
+          <div class="col-md-4 col-sm-12  align-self-center">
+            <select class="form-select selectProperties" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
+
+          <div class="col-md-4 col-sm-12  align-self-center">
+            <select class="form-select selectProperties" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 col-sm-12   align-self-center">
+            <select class="form-select selectProperties" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 col-sm-12   align-self-center">
+            <select class="form-select selectProperties" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          
+          <div class="col-md-4 col-sm-12  align-self-center d-flex selectProperties justify-content-center">
+            <div class="form-check form-check-inline">
+              <label class="form-check-label" for="inlineCheckbox1">Precio</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">UF</label>
+            </div>
+            <div class="form-check form-check-inline ">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">CLP</label>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12  align-self-center d-flex selectProperties justify-content-center">
+              <input  class="form-control selectProperties" type="text" id="inlineCheckbox3" value="option3">
+              <input  class="form-control selectProperties" type="text" id="inlineCheckbox3" value="option3">
+          </div>
+
+
+          <div class="col-md-4 col-sm-12  align-self-center">
+            <select class="form-select selectProperties" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+
+          <div class="col-md-4 col-sm-12  align-self-center">
+            <select class="form-select selectProperties" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+
+          <div class="col-md-4 col-sm-12   align-self-center ">
+            <select class="form-select selectProperties" aria-label="Default select example" style="color: white;">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
         </div>
       </div>
-    </div>
-
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
-      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
-
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
-    </div>
-
-  </section><!-- End Hero Section -->
-
+    </form>
+  </section>
+  <!-- Filter Properties Section -->
   <main id="main">
 
     <!-- ======= Get Started Section ======= -->
