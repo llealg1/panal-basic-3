@@ -22,8 +22,28 @@
 }
 
 .inputfilterProperties {
-  width: 40%;
+  width: 50%;
+  color: #fff;
+  background-color: gray;
+  border-radius: 7em;
+  opacity: .8;
+  font-size: 1rem;
+  font-weight: bold;
 }
+
+
+
+.inputfilterProperties:focus {
+  color: white;
+  background-color: gray;
+}
+
+.inputfilterProperties::placeholder {
+  color: white;
+  background-color: gray;
+  text-align: center;
+}
+
 
 .selectProperties::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;

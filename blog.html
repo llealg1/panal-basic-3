@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>UpConstruction Bootstrap Template - Blog</title>
+  <title>UpConstruction Bootstrap Template - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +30,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <!-- Styles Dev -->
+  <link href="assets/css/styles.css" rel="stylesheet">
   <!-- =======================================================
   * Template Name: UpConstruction - v1.2.1
   * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
@@ -40,386 +43,285 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
+  <header id="header" class="header d-flex align-items-center p-3 headerNav mt-md-4 mt-sm-0">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>UpConstruction<span>.</span></h1>
+        <h1 class="h1">LOGO</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">¿Quiénes somos?</a></li>
+          <li><a href="propiedades.html"  class="active">Propiedades</a></li>
+          <li><a href="services.html">Contáctanos</a></li>
+          <li><a href="projects.html">Intranet</a></li>
         </ul>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="">
+
+
+    <div class="mt-md-4">
+
+      <form>
+        <div class="container-fluid container-xl filterProperties"
+          style="background-color: gray; position: relative;margin-top: 5vh;">
+          <div class="row containerFilter">
+
+            <div class="col-md-4 col-sm-12  align-self-center">
+              <select class="form-select selectProperties" aria-label="Default select example">
+                <option selected>Tipo de operación</option>
+                <option value="1">Venta</option>
+                <option value="2">Arrienda</option>
+              </select>
+            </div>
+
+            <div class="col-md-4 col-sm-12  align-self-center">
+              <select class="form-select selectProperties" aria-label="Default select example">
+                <option selected>Tipo de inmueble</option>
+                <option value="1">Casa</option>
+                <option value="2">Departamento</option>
+                <option value="3">Oficina</option>
+                <option value="3">Sition</option>
+                <option value="3">Local Comercial</option>
+                <option value="3">Industrial</option>
+              </select>
+            </div>
+
+            <div class="col-md-4 col-sm-12   align-self-center">
+              <select class="form-select selectProperties" aria-label="Default select example">
+                <option selected>Región</option>
+                <option value="0">Región Metropolitana</option>
+                <option value="1">Región Los Ríos </option>
+                <option value="2">Región Arica y Parinacota</option>
+                <option value="3">Región Ñuble</option>
+                <option value="4">Región Tarapacá​​</option>
+                <option value="4">Región Antofagasta​​</option>
+              </select>
+            </div>
+
+            <div class="col-md-4 col-sm-12   align-self-center">
+              <select class="form-select selectProperties" aria-label="Default select example">
+                <option selected>Comuna</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="col-md-4 col-sm-12  align-self-center d-flex selectProperties justify-content-center">
+              <div class="form-check form-check-inline">
+                <label class="form-check-label" for="inlineCheckbox1">Precio</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">UF</label>
+              </div>
+              <div class="form-check form-check-inline ">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">CLP</label>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12  align-self-center d-flex selectProperties justify-content-around">
+              <input class="form-control selectProperties inputfilterProperties " type="text" id="inlineCheckbox3"
+                placeholder="Desde">
+              <input class="form-control selectProperties inputfilterProperties " type="text" id="inlineCheckbox3"
+                placeholder="Hasta">
+            </div>
+
+            <div class="col-md-4 col-sm-12  align-self-center">
+              <select class="form-select selectProperties" aria-label="Default select example">
+                <option selected>Habitaciones</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+
+            <div class="col-md-4 col-sm-12  align-self-center">
+              <select class="form-select selectProperties" aria-label="Default select example">
+                <option selected>Baños</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+
+            <div class="col-md-4 col-sm-12   align-self-center ">
+              <select class="form-select selectProperties" aria-label="Default select example" style="color: white;">
+                <option selected>Superficie (m&sup2;)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </section><!-- End Hero Section -->
+
   <main id="main">
+    
+    <!-- ======= Get Started Section ======= -->
+    <section style="padding-top: 0;" >
+      <h1 class="text-center">Propiedades </h1>
+      <h1 class="text-start m-5 px-5 text-bold" style="font-size: 3rem;">LUJOSA OFICINA EN VENTA LA DEHESA</h1>
+      <h1 class="text-start m-5 mb-0 px-5 " style="font-size: 2rem;"><i class="fa-solid fa-location-dot"></i> Lo Barnechea, LO BARNECHEA</h1>
+      <div class="container">
+        <div class="row d-flex justify-content-center">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
-      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+        </div>
+      </div>
 
-        <h2>Blog</h2>
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Blog</li>
-        </ol>
+    </section><!-- End Get Started Section -->
+
+
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services">
+      <div class="container-fluid" data-aos="fade-up" style="background-color: gray;">
+ 
+        <div class="row justify-content-around gy-4">
+          <h1 class="text-center text-white mb-5">Nosotros</h1>
+          <div class="col-lg-6 img-bg m-5  " style="background-image: url(assets/img/alt-services.jpg) ;" data-aos="zoom-in"
+            data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center text-white p-4">
+            
+            <p class="textNosotros">
+              Revolucionar el mercado de bienes raíces estableciendo
+              nuevos estándares comerciales y marcando el comienzo de
+              una nueva era de hacer corretaje, con modernas herra-
+              mientas de tecnología para incrementar la eficiencia y la
+              innovación, y creando mejores condiciones para nuestros
+              Agentes»
+            </p>
+            <br>
+
+            <p class="textNosotros">
+              Nuestra empresa significa libertad, flexibilidad, opciones,
+              herramientas, valor y soporte. Entendemos que cada
+              agente de bienes raíces es una entidad empresarial única, y
+              fomentamos la plena libertad creativa en su expresión. Pro-
+              porcionamos apoyo a nuestros agentes, personal adminis-
+              trativos e intermediarios, para entregarles una ventaja
+              competitiva en el área de bienes raíces.
+            </p>
+            <br>
+
+            <p class="textNosotros">
+              Hemos desarrollado múltiples niveles de capacitación para
+              abordar las diferentes necesidades de los diferentes agentes de bienes raíces y nos interesamos en la persona detrás
+              del agente. Organizamos «sesiones de estrategia» individuales con cada agente para descubrir, resaltar y desarrollar habilidades especiales
+            </p>
+            <br>
+          
+            <p class="textNosotros">
+              Nuestra filosofía representa un encuentro con a la alta tecnología, aprender a usarlas, mantenerlas, e ir aprendiendo
+              cada día más para lograr el éxito. Somos afiliados a Starlink
+              Realty Estados Unidos y estamos autorizados a desarrollar la
+              misma metodología y entrenamiento de una de las más
+              existosas plataformas del Mundo.
+            </p>
+            <br>
+            
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
 
       </div>
-    </div><!-- End Breadcrumbs -->
+    </section><!-- End Alt Services Section -->
 
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <section id="footer" class="footer">
 
-        <div class="row gy-4 posts-list">
+      <div class="footer-content position-relative">
+        <div class="container p-4">
+          <div class="row">
 
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-                <span class="post-date">December 12</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">John Doe</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                  </div>
-                </div>
-
-                <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-around">
+              <h1 style="font-size: 1rem;" class="align-self-center">ENVIENOS UN MENSAJE</h1>
+              <input class="form-control mb-2  inputfilterProperties " type="text" id="inlineCheckbox3"
+              placeholder="Nombre" style="border-color: 1px solid white;color: white;">
+              <input class="form-control mb-2 inputContact inputfilterProperties text-white" type="text" id="inlineCheckbox3"
+              placeholder="E-mail" style="border-color: 1px solid white;">
+              <input class="form-control mb-2 inputContact inputfilterProperties text-white" type="text" id="inlineCheckbox3"
+              placeholder="Teléfono" style="border-color: 1px solid white;">
+              <input class="form-control mb-2 inputContact inputfilterProperties text-white" type="text" id="inlineCheckbox3"
+              placeholder="Asunto" style="border-color: 1px solid white;">
+              <textarea class="form-control mb-2 inputContact inputfilterProperties text-white" type="text-" id="inlineCheckbox3"
+              placeholder="Mensaje" style="border-color: 1px solid white;resize: none;"></textarea>
+              <button class="btn btn-primary" style="border-radius: 7rem;width: 25%;background-color: white;color: black;font-weight: bold;">Enviar</button>
             </div>
-          </div><!-- End post list item -->
 
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-                <span class="post-date">March 19</span>
+            <div class="col-md-6 p-0" style="">
+              <div class="d-flex flex-column align-items-start justify-content-around p-3 " style="height: 100%;width: 66.66%;background-color: white;color: gray">
+                <h1 style="font-size: 1rem;" class="">NUESTROS CONTACTOS</h1>
+                <h1 style="font-size: 1rem;" class=""><i class="fa-solid fa-location-dot"></i>RentalProp Spa Apoquindo 6410 of. 605, Las Conndes</h1>
+                <h1 style="font-size: 1rem;" class=""><i class="fa-solid fa-phone"></i> +56 9 50469097</h1>
+                <h1 style="font-size: 1rem;" class=""><i class="fa-solid fa-envelope"></i> contacto@rentalprop.cl</h1>
               </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Nisi magni odit consequatur autem nulla dolorem</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Julia Parker</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                  </div>
-                </div>
-
-                <p>
-                  Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo libero rerum voluptatem pariatur nam.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
+             
             </div>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-                <span class="post-date">June 24</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Maria Doe</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                  </div>
-                </div>
-
-                <p>
-                  Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et. Eum temporibus fugiat voluptate enim tenetur sunt omnis.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt="">
-                <span class="post-date">August 05</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem.</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Maria Doe</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Sports</span>
-                  </div>
-                </div>
-
-                <p>
-                  Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-5.jpg" class="img-fluid" alt="">
-                <span class="post-date">September 17</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Accusamus quaerat aliquam qui debitis facilis consequatur</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">John Parker</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Politics</span>
-                  </div>
-                </div>
-
-                <p>
-                  In itaque assumenda aliquam voluptatem qui temporibus iusto nisi quia. Autem vitae quas aperiam nesciunt mollitia tempora odio omnis. Ipsa odit sit ut amet necessitatibus. Quo ullam ut corrupti autem consequuntur totam dolorem.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6">
-            <div class="post-item position-relative h-100">
-
-              <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-6.jpg" class="img-fluid" alt="">
-                <span class="post-date">December 07</span>
-              </div>
-
-              <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">Distinctio provident quibusdam numquam aperiam aut</h3>
-
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Julia White</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Economics</span>
-                  </div>
-                </div>
-
-                <p>
-                  Expedita et temporibus eligendi enim molestiae est architecto praesentium dolores. Illo laboriosam officiis quis. Labore officia quia sit voluptatem nisi est dignissimos totam. Et voluptate et consectetur voluptatem id dolor magni impedit. Omnis dolores sit.
-                </p>
-
-                <hr>
-
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-          </div><!-- End post list item -->
-
-        </div><!-- End blog posts list -->
-
-        <div class="blog-pagination">
-          <ul class="justify-content-center">
-            <li><a href="#">1</a></li>
-            <li class="active"><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-          </ul>
-        </div><!-- End blog pagination -->
-
+          </div>
+        </div>
       </div>
-    </section><!-- End Blog Section -->
+  
+  
+    </section>
+    <section id="footer" class="">
 
-  </main><!-- End #main -->
+      <div class="footer-content position-relative">
+        <div class="container p-4">
+          <div class="row">
+
+            <div class="col-md-4 text-center" style="border-right: 1px solid gray;">
+              <h1 style="font-size: 5rem;">LOGO</h1>
+            </div>
+
+            <div class="col-md-4 text-center">
+              <h1 style="font-size: 1rem;" class=""><i class="fa-solid fa-location-dot"></i>RentalProp Spa Apoquindo <br> 6410 of. 605, Las Conndes</h1>
+              <h1 style="font-size: 1rem;" class=""><i class="fa-solid fa-phone"></i>+56 9 50469097</h1>
+              <h1 style="font-size: 1rem;" class=""><i class="fa-solid fa-envelope"></i>contacto@rentalprop.cl</h1>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-around align-items-center">
+              <i class="fa-brands fa-facebook fa-2xl"></i>
+              <i class="fa-brands fa-square-instagram fa-2xl"></i>
+              <i class="fa-brands fa-twitter fa-2xl"></i>
+              <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </div>
+
+           
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+    </section>
+
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
 
-    <div class="footer-content position-relative">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-info">
-              <h3>UpConstruction</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links d-flex mt-3">
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End footer info column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
-            <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
-            <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-legal text-center position-relative">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-    </div>
-
-  </footer>
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
