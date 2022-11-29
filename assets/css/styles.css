@@ -92,9 +92,9 @@ input:checked {
 }
 
 .image-wrapper {
-  height: 12vw;
-  margin: 0 auto;
-  padding-top: 0.8rem;
+  height: 100%;
+  margin: 1.3em;
+  margin-bottom: 1px;
 }
 
 .image-wrapper img {
