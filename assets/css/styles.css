@@ -89,6 +89,11 @@ input:checked {
   width: calc(100%/3);
   border: 1px solid gray;
   text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 .image-wrapper {
@@ -111,4 +116,21 @@ input:checked {
 .textNosotros  {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.card .uf-item-price {
+  position: absolute;
+  right: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0.3rem;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: gray;
+  width: 20%;
+}
+
+.icon-map-marker:before {
+  content: "\f041";
 }
